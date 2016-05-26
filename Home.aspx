@@ -13,7 +13,7 @@
 <body>
     <script type="text/javascript" src="Javascript/Swiper/swiper.min.js"></script>
     
-    <div class="swiper-container">
+    <div class="swiper-container" style="position: fixed; margin-top: -50px;">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
             <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>

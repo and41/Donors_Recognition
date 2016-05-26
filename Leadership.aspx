@@ -6,8 +6,29 @@
 <head runat="server">
     <title></title>
     <link href="~/css/Leadership.css" rel="stylesheet" type="text/css" />
+    <link href="css/LeadershipFund.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <form id="form1" runat="server">
+    <asp:Repeater ID="Repeater1" runat="server">
+            <HeaderTemplate><table id="viewTable"><caption>Special Endowed Funds</caption></HeaderTemplate>
+            <ItemTemplate>
+                <div>
+                        <tr class="<%# Container.ItemIndex % 2 == 0 ? "rowOdd" : "rowEven" %>">
+                <td><asp:Label ID="donorFund" Text='<%# Eval("donorFund") %>' runat="server"></asp:Label></td>
+                <td><asp:Label ID="establishedBy" Text='<%# Eval("establishedBy") %>' runat="server"></asp:Label></td>
+                        </tr>
+                </div>
+            </ItemTemplate>
+            <FooterTemplate></table></FooterTemplate>
+        </asp:Repeater>
+        </form>
+
+
+
+
+
+
     <footer>
         <div class="footer">
         <a href="Home.aspx"><div class="menubar one">

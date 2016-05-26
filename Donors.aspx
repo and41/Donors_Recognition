@@ -6,8 +6,17 @@
 <head runat="server">
     <title>Donors</title>
     <link href="~/css/Donors.css" rel="stylesheet" type="text/css" />
+    <link href="css/Donor_Accordian.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    
+    <script src="Javascript/Donor_JS/Donor_JS.js"></script>
 </head>
 <body>
+    <div id="accordion" runat="server">
+    </div>
+    <a href="Edit.aspx">Back to Donors</a>
     <footer>
         <div class="footer">
         <a href="Home.aspx"><div class="menubar one">
@@ -32,6 +41,5 @@
         </div></a>
         </div>
     </footer>
-
 </body>
 </html>
